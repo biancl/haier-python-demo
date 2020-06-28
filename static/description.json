@@ -1,0 +1,26 @@
+{
+  "id": "0",
+  "description":"电机转速控制",
+  "input":
+  [
+    {"name": "u",
+      "type": "number",
+      "units": "V",
+      "description": "电压，范围-2000~2000"},
+    {"name": "i",
+      "type": "number",
+      "units": "A",
+      "description": "电流，范围0~2000"}
+  ],
+  "output":
+  [
+    {"name": "p",
+      "type": "number",
+      "units": "W",
+      "description": "功率"},
+    {"name": "n",
+      "type": "number",
+      "units": "rpm",
+      "description": "转速，假定与功率成正比"}
+  ]
+}
