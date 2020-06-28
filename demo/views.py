@@ -7,6 +7,7 @@ def getSpeed(request):
     try:
         u = int(request.GET.get('u'))
         i = int(request.GET.get('i'))
+        p= u*i
         if u > 2000 or u< -2000:
             return HttpResponse('参数错误，请检查参数U，范围-2000~2000')
         print ("ddd")
